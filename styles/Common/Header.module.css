@@ -1,0 +1,25 @@
+.root {
+    max-height: 20%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.title {
+    font-size: 28px;
+    font-family: 'comforta';
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navs {
+    font-size: 15px;
+    margin: 20px;
+    font-family: 'montserrat';
+    color: white;
+}
