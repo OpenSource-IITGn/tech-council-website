@@ -1,5 +1,5 @@
 const ROUTES = [
-    {id: 0, name: "Home", path: "/Home"},
+    {id: 0, name: "Home", path: "/"},
     {id: 1, name: "About", path: "/About"},
     {id: 2, name: "Clubs/Hobby groups", path: "/Clubs"},
     {id: 3, name: "Contact", path: "/Contact"},
