@@ -9,6 +9,7 @@ html,
   --red: #ff0000;
   --green: #00ff00;
   --blue: #0000ff;
+  --header-hover: #F22727;
 }
 body {
   padding: 0;
