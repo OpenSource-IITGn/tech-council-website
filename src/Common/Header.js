@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className={styles.root}>
         <h1 className={styles.title}>
-          <a href="/Home">
+          <a href="/">
             Tech Council
           </a>
         </h1>
