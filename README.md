@@ -2,16 +2,16 @@
 
 TLDR of the official documentation.
 
-Everything starts in pages/_app.js and pages/index.js
+Everything starts in `pages/_app.js` and `pages/index.js`.
 
-Each route ["/Home", "/Internships", etc] has a different folder under pages. Under each folder we have the main page as index.js.
+Each `route ["/Home", "/Internships", etc]` has a different folder under pages. Under each folder we have the main page as index.js.
 
-All reusable components are stored under src/Common folder.
+All reusable components are stored under `src/Common` folder.
 
-All constants such as primary and secondary color, route names are stored under src/Constants.
+All constants such as primary and secondary color, route names are stored under `src/Constants`.
 
-The styles here are unique. The globals.css file contains css that are followed throughout the website.
-Page specific styles are written as Page.module.css (eg. Home.module.css). The styles of common components go under styles/Common/Components.module.css
+The styles here are unique. The `globals.css` file contains css that are followed throughout the website.
+Page specific styles are written as `Page.module.css` (eg. Home.module.css). The styles of common components go under `styles/Common/Components.module.css`
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
