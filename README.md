@@ -2,14 +2,18 @@
 
 TLDR of the official documentation.
 
+### Basic
 Everything starts in `pages/_app.js` and `pages/index.js`.
 
+### Routes
 Each `route ["/Home", "/Internships", etc]` has a different folder under pages. Under each folder we have the main page as index.js.
 
+### Commons and Constants
 All reusable components are stored under `src/Common` folder.
-
 All constants such as primary and secondary color, route names are stored under `src/Constants`.
+Please note that the colors are defined as css variables under `styles/globals.css`. Do not hard code any color as it may rain down hell on us in case we need to change the color scheme of the site. If you do see any hard coded css variable, do report it and change it on your own. In case the color you need to use is not mentioned in the globals.css file, bring it to my notice. We may either get the color changed in the design, if not you are free to add the color on your own.
 
+### Styles
 The styles here are unique. The `globals.css` file contains css that are followed throughout the website.
 Page specific styles are written as `Page.module.css` (eg. Home.module.css). The styles of common components go under `styles/Common/Components.module.css`
 
