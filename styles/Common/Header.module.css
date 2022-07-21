@@ -1,6 +1,6 @@
 .root {
     max-height: 20%;
-    background-color: #000000;
+    background-color: var(--black);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,7 +8,7 @@
 .title {
     font-size: 28px;
     font-family: 'comforta';
-    color: white;
+    color: var(--white);
 }
 
 .navigation {
@@ -21,5 +21,5 @@
     font-size: 15px;
     margin: 20px;
     font-family: 'montserrat';
-    color: white;
+    color: var(--white);
 }
