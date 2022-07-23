@@ -5,11 +5,20 @@
     flex-direction: row;
     justify-content: space-around;
 }
-.title {
-    font-size: 28px;
-    font-family: 'comforta';
-    color: var(--white);
+.logo_link {
     align-self: center;
+}
+.logo_class {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-size: 30px;
+    color: var(--red);
+    align-self: center;
+    font-family: "share-bold";
+    margin: 10px;
 }
 
 .navigation {
@@ -20,8 +29,7 @@
 
 .navs {
     font-size: 15px;
-    padding: 15px;
-    font-family: 'montserrat';
+    padding: 5px 15px;
     color: var(--white);
 }
 
