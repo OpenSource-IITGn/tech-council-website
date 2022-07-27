@@ -1,5 +1,9 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
 html,
-:root{
+:root {
   /* --primarySolid: #00bcd4;
   --primaryText: #ffffff;
   --secondarySolid: #ff9800; */
@@ -10,7 +14,7 @@ html,
   --red: #ff0000;
   --green: #00ff00;
   --blue: #0000ff;
-  --header-hover: #F22727;
+  --header-hover: #f22727;
 }
 body {
   padding: 0;
@@ -26,25 +30,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-
-@font-face {
-  font-family: comforta;
-  src: url(../src/Fonts/Comfortaa-Regular.ttf);
-}
-
-@font-face {
-  font-family: montserrat;
-  src: url(../src/Fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-  font-family: share;
-  src: url(../src/Fonts/Share-Regular.ttf);
-}
-
-@font-face {
-  font-family: share-bold;
-  src: url(../src/Fonts/Share-Bold.ttf);
 }

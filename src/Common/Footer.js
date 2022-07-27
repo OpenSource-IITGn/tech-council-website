@@ -13,9 +13,9 @@ export default function Footer() {
       </div>
       <div className={styles.useful_links_outer}>
         <h1 className={styles.section_title}>USEFUL LINKS</h1>
-        {FOOTER_LINKS.map((route)=> {
+        {FOOTER_LINKS.map((route, id)=> {
           return (
-            <a className={styles.useful_links}>
+            <a className={styles.useful_links} key={id}>
               <img src={route.icon} width="15%" height="15%" className={styles.icon_style}/>
               <p>{route.name}</p>
             </a>

@@ -1,12 +1,14 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function Layout({children, menu}) {
-    return (
-      <>
-        <Header menuItems={menu} />
-        <main>{children}</main>        
-        <Footer />
-      </>
-    )
-  }
+const Layout = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
+
+export default Layout;
