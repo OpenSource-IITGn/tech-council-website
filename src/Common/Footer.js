@@ -21,8 +21,8 @@ export default function Footer() {
       </div> 
       <div className={styles.contact_us_outer}>
         <h1 className={styles.section_title}>CONTACT US</h1>
-        <p className={styles.contact_text}>Indian Institute of Technology Gandhinagar Palaj, Gandhinagar, Gujarat, India - 382355</p>
-        <p className={styles.contact_text}>Address: 323, Acad Block 4 <br/> Email: technical.secretary@iitgn.ac.in</p>
+        <p className={styles.contact_text}>323, Acad Block 4, Indian Institute of Technology Gandhinagar Palaj, Gandhinagar, Gujarat, India - 382355</p>
+        <p className={styles.contact_text}>technical.secretary@ iitgn.ac.in</p>
         <div className="flex flex-row items-center">
           <img src="/assets/icons/icons8-facebook-48.png" className={styles.social_link} />
           <img src="/assets/icons/icons8-instagram-48.png" className={styles.social_link} />
