@@ -1,10 +1,7 @@
 import styles from "../../styles/Common/Footer.module.css";
 import FOOTER_LINKS from "../Constants/footer_links";
-import { useRouter } from "next/router";
-import Image from "next/image";
 
 export default function Footer() {
-  const router = useRouter();
   return (
     <div className={styles.root}>
       <div className={styles.tech_council_outer}>
@@ -26,14 +23,18 @@ export default function Footer() {
         <h1 className={styles.section_title}>CONTACT US</h1>
         <p className={styles.contact_text}>Indian Institute of Technology Gandhinagar Palaj, Gandhinagar, Gujarat, India - 382355</p>
         <p className={styles.contact_text}>Address: 323, Acad Block 4 <br/> Email: technical.secretary@iitgn.ac.in</p>
-        <img src="/media/icons/icons8-facebook-48.png" className={styles.social_link} />
-        <img src="/media/icons/icons8-instagram-48.png" className={styles.social_link} />
+        <div className="flex flex-row items-center">
+          <img src="/assets/icons/icons8-facebook-48.png" className={styles.social_link} />
+          <img src="/assets/icons/icons8-instagram-48.png" className={styles.social_link} />
+        </div>
       </div>
       <div className={styles.torque_magazine_outer}>
         <h1 className={styles.section_title}>TORQUE MAGAZINE</h1>
         <p className={styles.torque_text}>Torque is the technical magazine of IIT Gandhinagar. It highlights the works of IITGN community in technical field.</p>
-        <img src="/media/icons/icons8-facebook-48.png" className={styles.social_link} />
-        <img src="/media/icons/icons8-instagram-48.png" className={styles.social_link} />
+        <div className="flex flex-row items-center">
+          <img src="/assets/icons/icons8-facebook-48.png" className={styles.social_link} />
+          <img src="/assets/icons/icons8-instagram-48.png" className={styles.social_link} />
+        </div>
       </div>
     </div>
   );

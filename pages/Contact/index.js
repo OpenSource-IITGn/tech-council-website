@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../../styles/Home.module.css";
 
 const Contact = () => {
   return (
@@ -14,7 +13,7 @@ const Contact = () => {
         <div className="container mx-auto flex flex-col lg:flex-row xl:px-24">
           {/* Contact Form */}
           <div className="mx-auto w-full max-w-sm text-white lg:flex-grow-0">
-            <h2 className="mb-1 text-4xl font-bold">React Out to Us</h2>
+            <h2 className="mb-1 text-4xl font-bold">Reach Out to Us</h2>
             <h3 className="text-lg text-gray-300">
               Fill out the form in case of any query
             </h3>
