@@ -1,12 +1,16 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import { useRouter } from "next/router";
 
-export default function Layout({children, menu}) {
-    return (
-      <>
-        <Header menuItems={menu} />
-        <main>{children}</main>        
-        <Footer />
-      </>
-    )
-  }
+const Layout = ({ children }) => {
+  const footerVisibility = useRouter().pathname === "/Contact" ? false : true;
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      {footerVisibility && <Footer />}
+    </>
+  );
+};
+
+export default Layout;
