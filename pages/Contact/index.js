@@ -81,7 +81,6 @@ const Contact = () => {
 						</p>
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7333.611380705143!2d72.68755678973487!3d23.213750909699588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2adec1f16d8d%3A0xdc447b8706689bc3!2sIndian%20Institute%20Of%20Technology%E2%80%93Gandhinagar%20(IIT%E2%80%93Gandhinagar)!5e0!3m2!1sen!2sin!4v1659945875227!5m2!1sen!2sin"
-							allowfullscreen=""
 							loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"
 							className="w-450 h-300 sm:w-200 sm:h-150 md:w-450 md:h-300"
