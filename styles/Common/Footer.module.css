@@ -11,7 +11,7 @@
 }
 
 .tech_council_outer {
-  max-width: 15%;
+  max-width: 20%;
 }
 
 .tech_council_text {
@@ -157,7 +157,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     bottom: 0;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .tech_council_outer {
@@ -173,6 +173,7 @@
     font-size: 38px;
     padding-left: 10px;
     border-left: 8px solid var(--white);
+    margin-bottom: 0px;
   }
   .tech_council_quote {
     font-size: 16px;
@@ -190,8 +191,8 @@
   }
 
   .useful_links_outer {
-    max-width: 50%;
-    margin-left: 10%;
+    max-width: 30%;
+    margin-left: 0px;
     margin-bottom: 20px;
   }
   
@@ -212,7 +213,7 @@
   }
   
   .contact_us_outer {
-    max-width: 40%;
+    max-width: 30%;
     margin: 0px 10px;
   }
   
@@ -328,7 +329,7 @@
   .tech_council_outer {
     max-width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     height: fit-content;
     margin-bottom: 20px;
@@ -338,11 +339,13 @@
     font-size: 32px;
     padding-left: 10px;
     border-left: 8px solid var(--white);
-    line-height: 30px
+    line-height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
   }
   .tech_council_quote {
     font-size: 16px;
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .section_title {
@@ -356,12 +359,7 @@
   }
 
   .useful_links_outer {
-    max-width: 35%;
-    margin-left: 0%;
-  }
-  
-  .useful_links {
-    font-size: 14px;
+    display: none;
   }
   
   .icon_style {
@@ -377,7 +375,7 @@
   }
   
   .contact_us_outer {
-    max-width: 50%;
+    max-width: 100%;
     margin: 0px 5px;
   }
 
@@ -396,5 +394,6 @@
 
   .torque_magazine_outer {
     max-width: 90%;
+    display: none;
   }
 }
