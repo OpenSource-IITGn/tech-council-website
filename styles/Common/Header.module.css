@@ -95,7 +95,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10%;
-    transition: 0.35s ease-in;
+    /* transition: 0.35s ease-in; */
   }
 
   .headerItem_sm {
