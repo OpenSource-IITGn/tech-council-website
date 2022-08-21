@@ -1,0 +1,84 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primarySolid);
+    padding: 40px;
+}
+
+.title {
+    font-family: "share";
+    color: var(--white);
+    font-size: 3em;
+}
+
+.subtitle {
+    font-family: "share";
+    color: var(--white);
+    font-size: 1em;
+    max-width: 50%;
+    text-align: center;
+    line-height: 2em;
+    margin: 20px auto;
+}
+
+.clubsOuter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.clubCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    max-width: 400px;
+    margin: 30px ;
+}
+
+.clubBanner {
+    max-width: 400px;
+    max-height: 250px;
+    /* border-radius: 10px; */
+    background-color: var(--black);
+}
+
+.clubInfo {
+    padding: 20px;
+    background-color: var(--black);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.clubName {
+    color: var(--secondaryText);
+    text-transform: capitalize!important;
+    font-size: 1.5em;
+}
+
+.clubDesc {
+    color: var(--white);
+    font-size: 1em;
+}
+
+.clubSocial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.clubSocialLink {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
