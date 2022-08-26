@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 20px;
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
 }
