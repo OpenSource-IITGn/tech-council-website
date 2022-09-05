@@ -1,0 +1,139 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primarySolid);
+    padding: 40px 10px;
+}
+
+.title {
+    font-family: "share";
+    color: var(--white);
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "share";
+    color: var(--white);
+    font-size: 1em;
+    max-width: 50%;
+    text-align: center;
+    line-height: 2em;
+    margin: 20px auto;
+}
+
+.clubsOuter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.clubCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    max-width: 400px;
+    margin: 20px 10px;
+    width: 31%;
+}
+
+.bannerOuter {
+    aspect-ratio: 8 / 5;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clubBanner {
+    max-width: 99%;
+    height: 100%;
+    background-color: var(--black);
+}
+
+.clubInfo {
+    padding: 20px;
+    background-color: var(--black);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.clubName {
+    color: var(--secondaryText);
+    text-transform: capitalize!important;
+    font-size: 1.5em;
+}
+
+.clubDesc {
+    color: var(--white);
+    font-size: 1em;
+}
+
+.clubSocial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.clubSocialLink {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 2.5em;
+    }
+    .subtitle {
+        font-size: 1em;
+        max-width: 80%;
+    }
+    .clubName {
+        font-size: 1.35em;
+    }
+    
+    .clubDesc {
+        font-size: 0.9em;
+    }
+    .clubInfo {
+        padding: 10px;
+    }
+    .clubCard {
+        max-width: 300px;
+        width: auto;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.25em;
+    }
+    .subtitle {
+        font-size: 0.9em;
+        max-width: 95%;
+        line-height: 1.75em;
+    }
+    .clubCard {
+        max-width: 350px;
+        width: auto;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .clubName {
+        text-align: center;
+    }
+}
+  
