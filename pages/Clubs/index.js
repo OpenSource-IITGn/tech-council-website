@@ -16,7 +16,7 @@ const Clubs = () => {
 			<div className={styles.root}>
 				<h2 className={styles.title}>CLUBS & HOBBY GROUPS</h2>
 				<p className={styles.subtitle}>
-					The various Technical Clubs along with Tinkerers' Lab
+					The various Technical Clubs along with Tinkerers&apos; Lab
 					coordinate together to take initiatives and conduct
 					activities round the year to further the technical quotient
 					of IITGN and also make a difference to everyone around us.
