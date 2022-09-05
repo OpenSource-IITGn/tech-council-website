@@ -66,8 +66,8 @@ const CLUBS = [
 		id: 3,
 		name: "ODYSSEY",
 		desc: "The universe is as vast as our imagination. The Odyssey club of IITGN attempts to foster the knowledge and participation of students of the institute in the field of astronomy. It encourages students across different disciplines and programmes to relive their passion to learn about the space and universe as a whole.",
-		banner: "/assets/images/club_logo/DiGiS_logo.jpg",
-		backgroundColor: "",
+		banner: "/assets/images/club_logo/Odyssey Logo.jpg",
+		backgroundColor: "#FFFFFF",
 		social: [
 			{
 				id: 0,
@@ -87,8 +87,8 @@ const CLUBS = [
 		id: 4,
 		name: "ML HOBBY GROUP",
 		desc: "Exposing the student community to the growing field of Machine learning and Deep learning, this group conducts peer led learning sessions, organizing and being part of ML hackathons. It also provides opportunities in the Machine Learning and Deep Learning fields.",
-		banner: "/assets/images/club_logo/DiGiS_logo.jpg",
-		backgroundColor: "",
+		banner: "/assets/images/club_logo/ML club logo.jpg",
+		backgroundColor: "#FFFFFF",
 		social: [
 			{
 				id: 0,

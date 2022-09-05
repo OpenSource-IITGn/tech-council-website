@@ -33,10 +33,12 @@ const Clubs = () => {
 									backgroundColor: club.backgroundColor,
 								}}
 							>
-								<img
-									className={styles.clubBanner}
-									src={club.banner}
-								/>
+								<div className={styles.bannerOuter}>
+									<img
+										className={styles.clubBanner}
+										src={club.banner}
+									/>
+								</div>
 								<div className={styles.clubInfo}>
 									<h2 className={styles.clubName}>
 										{club.name}
