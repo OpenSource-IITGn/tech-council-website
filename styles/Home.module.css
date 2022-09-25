@@ -1,0 +1,346 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primarySolid);
+}
+.aboutus {
+    width: 100%;
+    background-color: var(--primarySolid);
+    padding: 40px 10px;
+}
+
+.title {
+    font-family: "share";
+    color: var(--white);
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "share";
+    color: var(--white);
+    font-size: 1em;
+    max-width: 50%;
+    text-align: center;
+    line-height: 2em;
+    margin: 20px auto;
+}
+
+.cardsOuter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    max-width: 350px;
+    margin: 20px;
+    width: 31%;
+}
+
+.bannerOuter {
+    width: 350px;
+    height: 200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardBanner {
+    width: 150px;
+    height: 150px;
+    background-color: var(--black);
+}
+
+.cardInfo {
+    padding: 20px;
+    background-color: var(--black);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cardName {
+    color: var(--secondaryText);
+    text-transform: capitalize!important;
+    font-size: 1.5em;
+}
+
+.cardDesc {
+    color: var(--white);
+    font-size: 0.9em;
+}
+
+.clubsOuter {
+    width: 100%;
+    background-color: var(--black);
+    padding: 40px 10px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    background-color: var(--black);
+    padding: 20px;
+  }
+
+  .grid_item {
+    color: var(--white);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Koulen";
+    font-size: 50px;
+    color: var(--white);
+    padding: 10px;
+    grid-gap: 0px;
+    margin: 10px;
+}
+
+.mean_mechanics {
+    background-image: 
+    linear-gradient(
+      #00000050, 
+      #00000050
+    ),
+    url("/assets/images/club_bg/mean_mechanics.jfif");
+    /* width: 250px; */
+    height: 550px;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: 1 / 1 / span 4 / span 2;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+
+.grasp {
+    background-image: url("/assets/images/club_bg/grasp.jfif");
+    background-size: 40%;
+    background-color: var(--primarySolid);
+    padding: 10px;
+    grid-area: 1 / 3 / span 2 / span 2;
+    /* width: 250px; */
+    height: 280px;
+    justify-content: center;
+    align-items: flex-end;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--blurBrown);
+    -moz-box-shadow: 0px 0px 10px 5px var(--blurBrown);
+    box-shadow: 0px 0px 10px 5px var(--blurBrown);
+}
+
+.anveshanam {
+    background-color: var(--black);
+    grid-area: 1 / 5 / span 2 / span 2;
+    /* width: 250px; */
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondaryText);
+    border: 1px solid var(--secondaryText);
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+
+.digis {
+    background-image: linear-gradient(
+        #00000075, 
+        #00000075
+      ),
+      url("/assets/images/club_bg/digis.jfif");
+    grid-area: 1 / 7 / span 2 / span 3;
+    /* width: 500px; */
+    height: 280px;
+    justify-content: flex-end;
+    align-items: flex-end;  
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+.hardware {
+    background-image: 
+    linear-gradient(
+      #00000075, 
+      #00000075
+    ),
+    url("/assets/images/club_bg/hardware_vlsi_iot.jpg");
+    background-color: #000;
+    grid-area: 3 / 3 / span 2 / span 3;
+    /* width: 600px; */
+    height: 250px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+
+.ml {
+    background-image: url("/assets/images/club_bg/ml.jpg");
+    grid-area: 3 / 6 / span 2 / span 2;
+    /* width: 250px; */
+    height: 250px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+.esports {
+    background-image: url("/assets/images/club_bg/esports.jpg");
+    grid-area: 3 / 8 / span 2 / span 2;
+    /* width: 250px; */
+    height: 250px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+
+.metis {
+    background-image: url("/assets/images/club_bg/metis.jpg");
+    grid-area: 5 / 1 / span 2 / span 3;
+    /* width: 600px; */
+    height: 250px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+
+.blockchain {
+    background-image: url("/assets/images/club_bg/blockchain.jpg");
+    grid-area: 5 / 4 / span 2 / span 3;
+    /* width: 600px; */
+    height: 250px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 40px;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+
+.odyssey {
+    background-image: url("/assets/images/club_bg/odyssey.jpg");
+    grid-area: 5 / 7 / span 2 / span 3;
+    /* width: 600px; */
+    height: 250px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+}
+
+.events {
+    /* background-color: var(--black); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventCard {
+    width: 50%;
+    background-color: var(--black);
+    color: var(--white);
+    -webkit-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    -moz-box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    box-shadow: 0px 0px 10px 5px var(--secondaryText);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.eventBanner {
+    max-width: 720px;
+    max-height: 300px;
+    border-radius: 20px;  
+    margin: 10px auto;
+}
+
+.eventTitle {
+    font-size: 35px;
+}
+
+.eventLoc {
+    font-size: 24px;
+}
+
+.eventDesc {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 2.5em;
+    }
+    .subtitle {
+        font-size: 1em;
+        max-width: 80%;
+    }
+    .clubName {
+        font-size: 1.35em;
+    }
+    
+    .clubDesc {
+        font-size: 0.9em;
+    }
+    .clubInfo {
+        padding: 10px;
+    }
+    .clubCard {
+        max-width: 300px;
+        width: auto;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.25em;
+    }
+    .subtitle {
+        font-size: 0.9em;
+        max-width: 95%;
+        line-height: 1.75em;
+    }
+    .clubCard {
+        max-width: 350px;
+        width: auto;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .clubCard {
+        width: 300px;
+    }
+    .clubName {
+        text-align: center;
+    }
+}
+  
