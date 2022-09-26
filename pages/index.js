@@ -25,7 +25,7 @@ const Home = () => {
 			items: 1,
 		},
 	};
-	const events = [{}, {}, {}, {}];
+	const events = [{ key: 0 }, { key: 1 }, { key: 2 }, { key: 3 }];
 	return (
 		<>
 			<Head>
@@ -143,7 +143,10 @@ const Home = () => {
 						>
 							{events.map((event) => {
 								return (
-									<div className={styles.eventCard}>
+									<div
+										key={event.key}
+										className={styles.eventCard}
+									>
 										<img
 											src="/assets/images/club_bg/odyssey.jpg"
 											className={styles.eventBanner}
