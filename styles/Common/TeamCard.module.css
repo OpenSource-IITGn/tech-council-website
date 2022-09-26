@@ -1,0 +1,82 @@
+.root {
+    width: 450px;
+    position: relative;
+    background-color: var(--black);
+    border-radius: 25px;
+    margin-top: 100px;
+    margin: 10px;
+    margin-top: 80px;
+}
+
+.root_small {
+    width: 300px;
+    position: relative;
+    background-color: var(--black);
+    border-radius: 25px;
+    margin-top: 100px;
+    margin: 10px;
+    margin-top: 80px;
+}
+
+.image {
+    width: 40%;
+    /* height: 50%; */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    top: -25%;
+    left: 30%;
+}
+
+.image_small {
+    width: 50%;
+    /* height: 50%; */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    top: -25%;
+    left: 25%;
+}
+
+.info {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.info_small {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.name {
+    color: var(--white);
+    text-transform: capitalize!important;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text {
+    color: var(--white);
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.clubSocial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.clubSocialLink {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
