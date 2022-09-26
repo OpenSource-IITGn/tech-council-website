@@ -3,25 +3,29 @@ import styles from "../styles/Home.module.css";
 import ABOUT from "../src/Constants/about";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import TeamCard from "../src/Common/TeamCard";
 
 const Home = () => {
 	const responsive = {
+		superLargeDesktop: {
+			// the naming can be any, depends on you.
+			breakpoint: { max: 4000, min: 3000 },
+			items: 1,
+		},
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
 			items: 1,
-			slidesToSlide: 3, // optional, default to 1.
 		},
 		tablet: {
 			breakpoint: { max: 1024, min: 464 },
 			items: 1,
-			slidesToSlide: 2, // optional, default to 1.
 		},
 		mobile: {
 			breakpoint: { max: 464, min: 0 },
 			items: 1,
-			slidesToSlide: 1, // optional, default to 1.
 		},
 	};
+	const events = [{}, {}, {}, {}];
 	return (
 		<>
 			<Head>
@@ -33,7 +37,7 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.root}>
-				{/* <div className={styles.aboutus}>
+				<div className={styles.aboutus}>
 					<h2 className={styles.title}>About Us</h2>
 					<p className={styles.subtitle}>
 						Technical Council IITGN is the student body that
@@ -69,8 +73,8 @@ const Home = () => {
 							);
 						})}
 					</div>
-				</div> */}
-				{/* <div className={styles.clubsOuter}>
+				</div>
+				<div className={styles.clubsOuter}>
 					<h2 className={styles.title}>CLUBS & HOBBY GROUPS</h2>
 					<div className={styles.grid_container}>
 						<div
@@ -117,39 +121,89 @@ const Home = () => {
 							ODYSSEY
 						</div>
 					</div>
-				</div> */}
+				</div>
 				<hr />
 				<div className={styles.events}>
 					<h2 className={styles.title}>UPCOMING EVENTS</h2>
-					{/* <Carousel
-						swipeable={false}
-						draggable={false}
-						showDots={true}
-						responsive={responsive}
-						ssr={true} // means to render carousel on server-side.
-						infinite={true}
-						autoPlaySpeed={1000}
-						keyBoardControl={true}
-						customTransition="all .5"
-						transitionDuration={500}
-						containerClass="carousel-container"
-						removeArrowOnDeviceType={["tablet", "mobile"]}
-						dotListClass="custom-dot-list-style"
-						itemClass="carousel-item-padding-40-px"
-					>
-						<div>Item 1</div>
-						<div>Item 2</div>
-						<div>Item 3</div>
-						<div>Item 4</div>
-					</Carousel> */}
-					<div className={styles.eventCard}>
-						<img
-							src="/assets/images/club_bg/odyssey.jpg"
-							className={styles.eventBanner}
+					<div className={styles.carousel}>
+						<Carousel
+							swipeable={false}
+							draggable={true}
+							showDots={true}
+							responsive={responsive}
+							ssr={true} // means to render carousel on server-side.
+							infinite={true}
+							keyBoardControl={true}
+							containerClass="carousel-container"
+							removeArrowOnDeviceType={["tablet", "mobile"]}
+							deviceType={"desktop"}
+							dotListClass="custom-dot-list-style"
+							itemClass="carousel-item-padding-40-px"
+							centerMode={true}
+						>
+							{events.map((event) => {
+								return (
+									<div className={styles.eventCard}>
+										<img
+											src="/assets/images/club_bg/odyssey.jpg"
+											className={styles.eventBanner}
+										/>
+										<h2 className={styles.eventTitle}>
+											AMA with ex-Uber
+										</h2>
+										<p className={styles.eventLoc}>
+											A joint session from 4:30PM at 300
+											Audi
+										</p>
+										<p className={styles.eventDesc}>
+											It will be an informal AMA style
+											session answering questions about
+											getting into and navigating a career
+											in tech.
+										</p>
+									</div>
+								);
+							})}
+						</Carousel>
+					</div>
+				</div>
+				<div className={styles.team}>
+					<h2 className={styles.title}>Faculty Advisor</h2>
+					<TeamCard
+						name="Prof. Utsav Mannu"
+						email="technical.secretary@iitgn.ac.in"
+						bio="Associate professor department of computer science and engineering."
+						website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
+						image="/assets/images/team/Shivam_Chaudhary.jpg"
+						size="large"
+					/>
+					<hr className={styles.hrWhite} />
+					<h2 className={styles.title}>Secretary and Coordinators</h2>
+					<div className={styles.teamGrid}>
+						<TeamCard
+							name="Prof. Aniket Rajnish"
+							email="technical.secretary@iitgn.ac.in"
+							bio="Associate professor department of computer science and engineering."
+							website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
+							image="/assets/images/team/Shivam_Chaudhary.jpg"
+							size="small"
 						/>
-						<h2 className={styles.eventTitle}>AMA with ex-Uber</h2>
-						<p className={styles.eventLoc}>AMA with ex-Uber</p>
-						<p className={styles.eventDesc}>AMA with ex-Uber</p>
+						<TeamCard
+							name="Prof. Aniket Rajnish"
+							email="technical.secretary@iitgn.ac.in"
+							bio="Associate professor department of computer science and engineering."
+							website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
+							image="/assets/images/team/Shivam_Chaudhary.jpg"
+							size="large"
+						/>
+						<TeamCard
+							name="Prof. Aniket Rajnish"
+							email="technical.secretary@iitgn.ac.in"
+							bio="Associate professor department of computer science and engineering."
+							website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
+							image="/assets/images/team/Shivam_Chaudhary.jpg"
+							size="small"
+						/>
 					</div>
 				</div>
 			</div>
