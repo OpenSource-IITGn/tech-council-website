@@ -1,5 +1,5 @@
 .root {
-    width: 450px;
+    max-width: 450px;
     position: relative;
     background-color: var(--black);
     border-radius: 25px;
@@ -9,7 +9,7 @@
 }
 
 .root_small {
-    width: 300px;
+    max-width: 300px;
     position: relative;
     background-color: var(--black);
     border-radius: 25px;
@@ -79,4 +79,59 @@
     width: 25px;
     height: 25px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .root {
+        max-width: 425px;
+        min-width: 325px;
+        margin-top: 100px;
+        margin: 10px;
+        margin-top: 80px;
+    }
+    
+    .root_small {
+        max-width: 325px;
+        min-width: 275px;
+        margin-top: 100px;
+        margin: 10px;
+        margin-top: 80px;
+    }
+
+    .info {
+        margin-top: 80px;
+        padding: 20px;
+    }
+    
+    .info_small {
+        margin-top: 80px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .root {
+        max-width: 300px;
+        min-width: 275px;
+        margin-top: 100px;
+        margin: 10px;
+        margin-top: 80px;
+    }
+    
+    .root_small {
+        max-width: 200px;
+        margin-top: 100px;
+        margin: 10px;
+        margin-top: 80px;
+    }    
+
+    .info {
+        margin-top: 60px;
+        padding: 20px;
+    }
+    
+    .info_small {
+        margin-top: 60px;
+        padding: 20px;
+    }  
 }

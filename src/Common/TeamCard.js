@@ -1,10 +1,18 @@
 import styles from "../../styles/Common/TeamCard.module.css";
 import FOOTER_LINKS from "../Constants/footer_links";
 
-export default function TeamCard({ name, email, bio, website, image, size }) {
+export default function TeamCard({
+	name,
+	email,
+	bio,
+	website,
+	image,
+	size,
+	className,
+}) {
 	if (size === "large") {
 		return (
-			<div className={styles.root}>
+			<div className={`${styles.root} ${className}`}>
 				<img className={styles.image} src={image} alt={name} />
 				<div className={styles.info}>
 					<h2 className={styles.name}>{name}</h2>
@@ -28,7 +36,7 @@ export default function TeamCard({ name, email, bio, website, image, size }) {
 		);
 	} else {
 		return (
-			<div className={styles.root_small}>
+			<div className={`${styles.root_small} ${className}`}>
 				<img className={styles.image_small} src={image} alt={name} />
 				<div className={styles.info_small}>
 					<h2 className={styles.name}>{name}</h2>
