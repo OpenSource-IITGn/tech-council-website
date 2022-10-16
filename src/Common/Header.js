@@ -29,25 +29,27 @@ const Header = () => {
 			</h1>
 			<nav className={styles.nav_outer}>
 				{!isOpen ? (
-					<ul className={styles.navigation}>
-						{/* {ROUTES.map((route, id) => {
-							return (
-								<li
-									key={id}
-									className={`${
-										router.pathname === route.path &&
-										styles.active
-									} ${styles.headerItem}`}
-								>
-									<Link href={route.path}>
-										<a className={styles.navLinks}>
-											{route.name}
-										</a>
-									</Link>
-								</li>
-							);
-						})} */}
-						<li
+					<>
+						<ul className={styles.navigation}>
+							{ROUTES.map((route, id) => {
+								return (
+									<li
+										key={id}
+										className={`${
+											router.pathname === route.path &&
+											styles.active
+										} ${styles.headerItem}`}
+									>
+										<Link href={route.path}>
+											<a className={styles.navLinks}>
+												{route.name}
+											</a>
+										</Link>
+									</li>
+								);
+							})}
+						</ul>
+						<div
 							className={styles.bars}
 							onClick={() => setIsOpen(true)}
 						>
@@ -59,8 +61,8 @@ const Header = () => {
 									className={styles.menu_logo}
 								/>
 							</a>
-						</li>
-					</ul>
+						</div>
+					</>
 				) : (
 					<ul className={styles.navigation_sm}>
 						{ROUTES.map((route, id) => {
