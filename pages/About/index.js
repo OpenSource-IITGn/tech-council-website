@@ -1,5 +1,45 @@
 import Head from "next/head";
-import styles from "../../styles/Clubs.module.css";
+import { Tooltip } from "@nextui-org/react";
+import styles from "../../styles/About.module.css";
+import ABOUT_LARGE from "../../src/Constants/about_large";
+import TEAM from "../../src/Constants/team";
+
+const TeamCardSmall = ({ name, members }) => {
+	return (
+		<div className={styles.teamCardSmall}>
+			{members && members.length > 0 ? (
+				<div className={styles.memberOuterDouble}>
+					{members.map((member) => {
+						return (
+							<div key={member.id}>
+								<Tooltip content={members.email || "-"}>
+									<img
+										src={member.image}
+										className={styles.memberImageDouble}
+									/>
+								</Tooltip>
+								<p className={styles.memberName}>
+									{member.name}
+								</p>
+							</div>
+						);
+					})}
+				</div>
+			) : (
+				<div className={styles.memberOuter}>
+					<Tooltip content={members.email || "-"}>
+						<img
+							src={members.image}
+							className={styles.memberImage}
+						/>
+					</Tooltip>
+					<p className={styles.memberName}>{members.name}</p>
+				</div>
+			)}
+			<h2 className={styles.groupName}>{name}</h2>
+		</div>
+	);
+};
 
 const About = () => {
 	return (
@@ -12,6 +52,52 @@ const About = () => {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<section className={styles.root}>
+				<h2 className={styles.title}>About Us</h2>
+				<p className={styles.subtext}>
+					Technical Council IITGN is the student body that promotes
+					and takes initiatives for the technical activities that
+					happen at IIT Gandhinagar.
+				</p>
+				<div className={styles.info}>
+					{ABOUT_LARGE.map((about) => {
+						return (
+							<div className={styles.infoInner}>
+								<div className={styles.infoBanner}>
+									<img
+										src={about.banner}
+										className={styles.banner}
+									/>
+								</div>
+								<div className={styles.infoText}>
+									<h2 className={styles.infoName}>
+										{about.name}
+									</h2>
+									<p className={styles.infoDesc}>
+										{about.desc}
+									</p>
+								</div>
+							</div>
+						);
+					})}
+				</div>
+				<div className={styles.ourTeam}>
+					<h2 className={styles.title}>OUR TEAM</h2>
+					<TeamCardSmall {...TEAM.faculty} />
+					<TeamCardSmall {...TEAM.tech_secy} />
+					<div className={styles.generalMembers}>
+						{TEAM.management.map((member) => {
+							return <TeamCardSmall {...member} />;
+						})}
+					</div>
+					<hr className={styles.hrWhite} />
+					<div className={styles.generalMembers}>
+						{TEAM.secretaries.map((secretary) => {
+							return <TeamCardSmall {...secretary} />;
+						})}
+					</div>
+				</div>
+			</section>
 		</>
 	);
 };
