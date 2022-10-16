@@ -42,7 +42,6 @@ const TeamCardSmall = ({ name, members }) => {
 };
 
 const About = () => {
-	console.log({ ...TEAM.secretaries[5] });
 	return (
 		<>
 			<Head>
@@ -91,7 +90,7 @@ const About = () => {
 							return <TeamCardSmall {...member} />;
 						})}
 					</div>
-
+					<hr className={styles.hrWhite} />
 					<div className={styles.generalMembers}>
 						{TEAM.secretaries.map((secretary) => {
 							return <TeamCardSmall {...secretary} />;
