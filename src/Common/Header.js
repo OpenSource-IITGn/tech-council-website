@@ -30,7 +30,7 @@ const Header = () => {
 			<nav className={styles.nav_outer}>
 				{!isOpen ? (
 					<ul className={styles.navigation}>
-						{ROUTES.map((route, id) => {
+						{/* {ROUTES.map((route, id) => {
 							return (
 								<li
 									key={id}
@@ -46,7 +46,7 @@ const Header = () => {
 									</Link>
 								</li>
 							);
-						})}
+						})} */}
 						<li
 							className={styles.bars}
 							onClick={() => setIsOpen(true)}
@@ -102,13 +102,5 @@ const Header = () => {
 		</header>
 	);
 };
-
-function navigation() {
-	var x = document.getElementById("myTopnav");
-	if (x.className.includes("navbar")) {
-		// x.className += " responsive";
-	} else {
-	}
-}
 
 export default Header;
