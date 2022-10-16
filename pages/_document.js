@@ -1,9 +1,11 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { CssBaseline } from "@nextui-org/react";
 
 export default function Document() {
 	return (
 		<Html>
 			<Head>
+				{CssBaseline.flush()}
 				{/* Any new fonts to be added here */}
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link

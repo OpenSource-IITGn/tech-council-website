@@ -1,0 +1,307 @@
+.root {
+    background-color: var(--primarySolid);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3em;
+    margin: 40px;
+}
+
+.subtext {
+    font-size: 1.2em;
+    margin: 30px;
+    width: 40%;
+    text-align: center;
+    line-height: 2em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoInner {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.infoBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.banner {
+    width: 250px;
+    height: 250px;
+}
+
+.infoText {
+    width: 50%;
+    margin: 20px;
+}
+
+.infoName {
+    font-size: 2.1em;
+    margin: 10px 0px;
+    color: var(--secondaryText);
+}
+
+.infoDesc {
+    font-size: 1em;
+}
+
+.ourTeam {
+    width: 100%;
+    background-color: var(--lightBlack);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberOuter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberOuterDouble {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberImage {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 150px;
+    /* height: 100%; */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.memberImageDouble {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 200px;
+    width: 150px;
+    /* height: 100%; */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.groupName {
+    font-size: 1.5em;
+    margin: 5px 0px;
+    color: var(--secondaryText);
+    text-align: center;
+}
+
+.memberName {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.teamCardSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    width: 30%;
+}
+
+.generalMembers {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hrWhite{
+    height: 1px;
+    width: 95%;
+    color: var(--white);
+    background-color: var(--white);
+    border: none;
+    margin: 20px 0px
+}
+
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 2.8em;
+        margin: 20px;
+    }
+    .subtext {
+        width: 60%;
+        font-size: 1.1em;
+        margin: 10px
+    }
+    
+    .infoInner {
+        width: 95%;
+        margin: 20px 0px;
+    }
+    .banner {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .infoText {
+        width: 70%;
+        margin: 10px;
+    }
+    
+    .infoName {
+        font-size: 2em;
+        margin: 5px 0px;
+        color: var(--secondaryText);
+    }
+
+    .infoDesc {
+        font-size: 0.9em;
+    }
+
+    .generalMembers {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 2.5em;
+        margin: 20px;
+    }
+    .subtext {
+        width: 80%;
+        font-size: 1em;
+        margin: 10px
+    }
+    
+    .infoInner {
+        width: 95%;
+        margin: 10px 0px;
+    }
+    .banner {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .infoText {
+        width: 75%;
+        margin: 5px;
+    }
+    
+    .infoName {
+        font-size: 1.8em;
+        margin: 5px 0px;
+        color: var(--secondaryText);
+    }
+
+    .infoDesc {
+        font-size: 0.9em;
+    }
+    .teamCardSmall {
+        margin: 10px 0px;
+        width: 50%;
+    }
+    .generalMembers {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .infoInner {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .banner {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .infoText {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .infoName {
+        font-size: 1.9em;
+        margin: 0px;
+    }
+    
+    .infoDesc {
+        font-size: 0.9em;
+    }
+
+    .teamCardSmall {
+        margin: 20px 0px;
+        width: 80%;
+    }
+    
+    .generalMembers {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2em;
+        margin: 10px;
+    }
+    .subtext {
+        width: 95%;
+        font-size: 0.8em;
+        margin: 10px
+    }
+    
+    .infoInner {
+        width: 95%;
+        margin: 20px 0px;
+    }
+    .banner {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .infoText {
+        width: 95%;
+        margin: 5px;
+    }
+    
+    .infoName {
+        font-size: 1.5em;
+        margin: 0px;
+        color: var(--secondaryText);
+    }
+
+    .infoDesc {
+        font-size: 0.8em;
+    }
+}
