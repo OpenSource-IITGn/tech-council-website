@@ -12,7 +12,7 @@ const TeamCardSmall = ({ name, members }) => {
 					{members.map((member) => {
 						return (
 							<div key={member.id}>
-								<Tooltip content={members.email || "-"}>
+								<Tooltip content={member.email || "-"}>
 									<img
 										src={member.image}
 										className={styles.memberImageDouble}

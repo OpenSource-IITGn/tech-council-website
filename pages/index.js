@@ -204,11 +204,11 @@ const Home = () => {
 				<div className={styles.team}>
 					<h2 className={styles.title}>Faculty Advisor</h2>
 					<TeamCard
-						name="Prof. Utsav Mannu"
-						email="technical.secretary@iitgn.ac.in"
-						bio="Associate professor department of computer science and engineering."
-						website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
-						image="/assets/images/team/Shivam_Chaudhary.jpg"
+						name="Prof. Jaichander Swaminathan"
+						email="jaichander.s@iitgn.ac.in"
+						bio="He is a Kanchan and Harilal Doshi Chair Assistant Professor, Mechanical Engineering at IIT Gandhinagar. He completed his PhD from Massachusetts Institute of Technology in 2017."
+						website="https://iitgn.ac.in/faculty/me/7-jaichander"
+						image="/assets/images/team/Jaichander_Swaminathan.jpg"
 						size="large"
 					/>
 					<hr className={styles.hrWhite} />
@@ -218,26 +218,26 @@ const Home = () => {
 							className={styles.teamCardCord1}
 							name="Progyan Das"
 							email="technical.secretary@iitgn.ac.in"
-							bio="Associate professor department of computer science and engineering."
-							website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
-							image="/assets/images/team/Shivam_Chaudhary.jpg"
+							bio="A pre-final year undergraduate student at IIT Gandhinagar."
+							website="http://progyan.me/"
+							image="/assets/images/team/Progyan_Das.jpg"
 							size="small"
 						/>
 						<TeamCard
 							className={styles.teamCardSecy}
 							name="Aniket Rajnish"
-							email="technical.secretary@iitgn.ac.in"
-							bio="Associate professor department of computer science and engineering."
-							website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
-							image="/assets/images/team/Shivam_Chaudhary.jpg"
+							email="aniket.r@iitgn.ac.in"
+							bio="A final year undergraduate student at IIT Gandhinagar."
+							website="http://progyan.me/"
+							image="/assets/images/team/Aniket_Rajnish.jpg"
 							size="large"
 						/>
 						<TeamCard
 							className={styles.teamCardCord2}
-							name="Progyan Das"
-							email="technical.secretary@iitgn.ac.in"
+							name="Shruridh Banthia"
+							email="shruhrid.banthia@iitgn.ac.in"
 							bio="Associate professor department of computer science and engineering."
-							website="https://www.iitgn.ac.in/faculty/aniket-rajnish"
+							website="http://progyan.me/"
 							image="/assets/images/team/Shivam_Chaudhary.jpg"
 							size="small"
 						/>
