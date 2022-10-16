@@ -62,7 +62,7 @@ const About = () => {
 				<div className={styles.info}>
 					{ABOUT_LARGE.map((about) => {
 						return (
-							<div className={styles.infoInner}>
+							<div className={styles.infoInner} key={about.id}>
 								<div className={styles.infoBanner}>
 									<img
 										src={about.banner}
@@ -87,13 +87,20 @@ const About = () => {
 					<TeamCardSmall {...TEAM.tech_secy} />
 					<div className={styles.generalMembers}>
 						{TEAM.management.map((member) => {
-							return <TeamCardSmall {...member} />;
+							return (
+								<TeamCardSmall key={member.id} {...member} />
+							);
 						})}
 					</div>
 					<hr className={styles.hrWhite} />
 					<div className={styles.generalMembers}>
 						{TEAM.secretaries.map((secretary) => {
-							return <TeamCardSmall {...secretary} />;
+							return (
+								<TeamCardSmall
+									key={secretary.id}
+									{...secretary}
+								/>
+							);
 						})}
 					</div>
 				</div>
