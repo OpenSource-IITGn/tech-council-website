@@ -18,13 +18,21 @@ export default function TeamCard({
 					<h2 className={styles.name}>{name}</h2>
 					<p className={styles.text}>{bio}</p>
 					<div className={styles.clubSocial}>
-						<a className={styles.clubSocialLink} href={website}>
+						<a
+							className={styles.clubSocialLink}
+							href={`mailto:${email}`}
+							target="_blank"
+						>
 							<img
 								className={styles.clubSocialIcon}
 								src={"/assets/icons/google-48.png"}
 							/>
 						</a>
-						<a className={styles.clubSocialLink} href={website}>
+						<a
+							className={styles.clubSocialLink}
+							href={website}
+							target="_blank"
+						>
 							<img
 								className={styles.clubSocialIcon}
 								src={"/assets/icons/icons8-internet-50.png"}

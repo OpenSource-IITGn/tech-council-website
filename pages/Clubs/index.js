@@ -47,24 +47,26 @@ const Clubs = () => {
 										{club.desc}
 									</p>
 									<div className={styles.clubSocial}>
-										{club.social.map((social) => {
-											return (
-												<a
-													className={
-														styles.clubSocialLink
-													}
-													href={social.src}
-													key={social.id}
-												>
-													<img
+										{club.social &&
+											club.social.length > 0 &&
+											club.social.map((social) => {
+												return (
+													<a
 														className={
-															styles.clubSocialIcon
+															styles.clubSocialLink
 														}
-														src={social.icon}
-													/>
-												</a>
-											);
-										})}
+														href={social.src}
+														key={social.id}
+													>
+														<img
+															className={
+																styles.clubSocialIcon
+															}
+															src={social.icon}
+														/>
+													</a>
+												);
+											})}
 									</div>
 								</div>
 							</div>
