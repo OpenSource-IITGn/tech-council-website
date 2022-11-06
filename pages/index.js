@@ -73,6 +73,12 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.root}>
+				<div className={styles.welcome}>
+					<h1 className={styles.welcomeText}>
+						Welcome to the official website of Technical Council at
+						IIT Gandhinagar
+					</h1>
+				</div>
 				<div className={styles.aboutus}>
 					<h2 className={styles.title}>About Us</h2>
 					<p className={styles.subtitle}>
@@ -228,7 +234,7 @@ const Home = () => {
 							name="Aniket Rajnish"
 							email="aniket.r@iitgn.ac.in"
 							bio="A final year undergraduate student at IIT Gandhinagar."
-							website="http://progyan.me/"
+							website="http://makra.wtf/"
 							image="/assets/images/team/Aniket_Rajnish.jpg"
 							size="large"
 						/>
@@ -236,9 +242,9 @@ const Home = () => {
 							className={styles.teamCardCord2}
 							name="Shruridh Banthia"
 							email="shruhrid.banthia@iitgn.ac.in"
-							bio="Associate professor department of computer science and engineering."
-							website="http://progyan.me/"
-							image="/assets/images/team/Shivam_Chaudhary.jpg"
+							bio="A final year undergraduate student at IIT Gandhinagar."
+							website="https://www.linkedin.com/in/shruhrid-banthia-b9aa01203"
+							image="/assets/images/team/Shruhrid_Banthia.jpg"
 							size="small"
 						/>
 					</div>

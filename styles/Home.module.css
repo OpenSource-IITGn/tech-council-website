@@ -7,6 +7,24 @@
     height: 100%;
     background-color: var(--primarySolid);
 }
+.welcome {
+    background-image: url("/assets/images/tech_council_main.png");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcomeText {
+    font-size: 4em;
+    width: 60%;
+    text-align: center;
+    color: var(--white);
+}
+
 .aboutus {
     width: 100%;
     background-color: var(--primarySolid);
@@ -128,8 +146,7 @@
 }
 
 .grasp {
-    background-image: url("/assets/images/club_bg/grasp.jfif");
-    background-size: 40%;
+    background-image: url("/assets/images/club_bg/grasp.png");
     background-color: var(--primarySolid);
     padding: 10px;
     grid-area: 1 / 3 / span 2 / span 2;
@@ -143,7 +160,7 @@
 }
 
 .anveshanam {
-    background-color: var(--black);
+    background-image: url("/assets/images/club_bg/anveshanam.png");
     grid-area: 1 / 5 / span 2 / span 2;
     /* width: 250px; */
     height: 280px;
