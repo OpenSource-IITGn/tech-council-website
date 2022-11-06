@@ -3,7 +3,7 @@ const ROUTES = [
 	{ name: "About", path: "/About" },
 	{ name: "Clubs / Hobby groups", path: "/Clubs" },
 	// { name: "Events", path: "/Events" },
-	{ name: "Intern Portal", path: "/Internships" },
+	{ name: "Chamber of Secrets", path: "/Internships" },
 	{ name: "Contact", path: "/Contact" },
 ];
 
