@@ -161,8 +161,8 @@ const SECRETARIES = [
 				id: 1,
 				name: "Pallav Jain",
 				email: "pallav.j@iitgn.ac.in",
-				// image: "/assets/images/team/Pallav_Jain.jpg",
-				image: "/assets/images/team/Videh.JPG",
+				image: "/assets/icons/icons8-person-64.png",
+				// image: "/assets/images/team/Videh.JPG",
 			},
 		],
 	},
@@ -204,8 +204,8 @@ const MANAGEMENT = [
 		members: {
 			name: "Shruridh Banthia",
 			email: "shruhrid.banthia@iitgn.ac.in",
-			// image: "/assets/images/team/Pushpendra_Pratap_Singh.png",
-			image: "/assets/icons/icons8-person-64.png",
+			image: "/assets/images/team/Shruhrid_Banthia.jpg",
+			// image: "/assets/icons/icons8-person-64.png",
 		},
 	},
 	{

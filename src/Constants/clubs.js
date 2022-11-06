@@ -38,8 +38,8 @@ const CLUBS = [
 		id: 5,
 		name: "WEB3/BLOCKCHAIN HOBBY GROUP",
 		desc: "Exposes members to this growing technology by organizing training activities, workshops etc. in this field.Conducting workshops where they would be providing in-depth knowledge on blockchains, their development in languages like Solidity, Rust etc., and teaching smart contracts.",
-		banner: "/assets/images/club_logo/DiGiS_logo.jpg",
-		backgroundColor: "",
+		banner: "/assets/images/club_logo/web3_blockchain_hobby_grp.png",
+		backgroundColor: "#000F19",
 	},
 	{
 		id: 6,
@@ -52,14 +52,14 @@ const CLUBS = [
 		id: 7,
 		name: "HARDWARE, IoT, VLSI GROUP",
 		desc: "To create a platform to apply the knowledge gained in theory classes to solving real-world problems. Planning and overseeing training activities and hands-on sessions to gain expertise in industry-relevant concepts and skills like IoT and Embedded Systems.",
-		banner: "/assets/images/club_logo/IITGN esports.jpg",
-		backgroundColor: "#220D02",
+		banner: "/assets/images/club_logo/Hardware Group.PNG",
+		backgroundColor: "#000000",
 	},
 	{
 		id: 8,
 		name: "ANVESHANAM",
 		desc: "Promoting general awareness about research - Promoting software learning and conducting guest Interaction sessions. Providing career guidance, increasing awareness about scholarships and research events, interactions and collaborations abroad.",
-		banner: "/assets/images/club_logo/AnveshanamLogoPNG.png",
+		banner: "/assets/images/club_logo/AnveshanamLogo.png",
 		backgroundColor: "#FFF",
 	},
 	{
