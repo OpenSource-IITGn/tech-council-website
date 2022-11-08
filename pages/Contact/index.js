@@ -152,19 +152,31 @@ const Contact = () => {
 						Connect with us
 					</h3>
 					<div className="flex items-center justify-center space-x-3 pt-2 pb-4 sm:space-x-6 md:mt-2 md:space-x-10">
-						<a href={FOOTER_LINKS.social.facebook} target="_blank">
+						<a
+							href={FOOTER_LINKS.social.facebook}
+							target="_blank"
+							rel="noreferrer"
+						>
 							<img
 								src="/assets/icons/icons8-facebook-48.png"
 								className="h-8 w-8 rounded-full md:h-10 md:w-10"
 							/>
 						</a>
-						<a href={FOOTER_LINKS.social.linkedin} target="_blank">
+						<a
+							href={FOOTER_LINKS.social.linkedin}
+							target="_blank"
+							rel="noreferrer"
+						>
 							<img
 								src="/assets/icons/icons8-linkedin-circled-48.png"
 								className="h-8 w-8 rounded-full md:h-10 md:w-10"
 							/>
 						</a>
-						<a href={FOOTER_LINKS.social.instagram} target="_blank">
+						<a
+							href={FOOTER_LINKS.social.instagram}
+							target="_blank"
+							rel="noreferrer"
+						>
 							<img
 								src="/assets/icons/icons8-instagram-48.png"
 								className="h-8 w-8 rounded-full md:h-10 md:w-10"
@@ -173,6 +185,7 @@ const Contact = () => {
 						<a
 							href={`mailto:${FOOTER_LINKS.social.email}`}
 							target="_blank"
+							rel="noreferrer"
 						>
 							<img
 								src="/assets/icons/icons8-envelope-48.png"
