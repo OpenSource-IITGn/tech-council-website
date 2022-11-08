@@ -1,6 +1,44 @@
 import Head from "next/head";
+import React, { useState } from "react";
+
+import sendContactData from "../../src/sheets";
 
 const Contact = () => {
+	const [form, setForm] = useState({
+		name: "",
+		email: "",
+		phone: "",
+		query: "",
+	});
+
+	const submitForm = (e) => {
+		e.preventDefault();
+
+		if (
+			form.name !== "" &&
+			form.email !== "" &&
+			form.phone !== "" &&
+			form.query !== ""
+		) {
+			// Data add for append
+			const newRow = {
+				Name: form.name,
+				Email: form.email,
+				Phone: form.phone,
+				Query: form.query,
+			};
+
+			sendContactData(newRow);
+		}
+	};
+
+	const handleChange = (e) => {
+		setForm({
+			...form,
+			[e.target.name]: e.target.value,
+		});
+	};
+
 	return (
 		<>
 			<Head>
@@ -22,7 +60,22 @@ const Contact = () => {
 						<h3 className="text-lg text-gray-300">
 							Fill out the form in case of any query
 						</h3>
-						<form className="mt-4 font-roboto">
+						<form
+							className="mt-4 font-roboto"
+							onSubmit={submitForm}
+						>
+							<label className="form-label" htmlFor="email">
+								Name
+							</label>
+							<input
+								className="form-input"
+								type="text"
+								name="name"
+								id="name"
+								// placeholder="Enter your email"
+								onChange={handleChange}
+								required
+							/>
 							<label className="form-label" htmlFor="email">
 								Email
 							</label>
@@ -32,6 +85,7 @@ const Contact = () => {
 								name="email"
 								id="email"
 								// placeholder="Enter your email"
+								onChange={handleChange}
 								required
 							/>
 							<label className="form-label" htmlFor="phoneNo">
@@ -40,9 +94,10 @@ const Contact = () => {
 							<input
 								className="form-input"
 								type="tel"
-								name="phoneNo"
-								id="phoneNo"
+								name="phone"
+								id="phone"
 								min="10"
+								onChange={handleChange}
 								// placeholder="Enter your phone no"
 							/>
 							<label className="form-label" htmlFor="email">
@@ -54,6 +109,7 @@ const Contact = () => {
 								id="query"
 								cols="30"
 								rows="5"
+								onChange={handleChange}
 								// placeholder="Write your query here"
 								required
 							></textarea>
@@ -82,7 +138,7 @@ const Contact = () => {
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7333.611380705143!2d72.68755678973487!3d23.213750909699588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2adec1f16d8d%3A0xdc447b8706689bc3!2sIndian%20Institute%20Of%20Technology%E2%80%93Gandhinagar%20(IIT%E2%80%93Gandhinagar)!5e0!3m2!1sen!2sin!4v1659945875227!5m2!1sen!2sin"
 							loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"
+							referrerPolicy="no-referrer-when-downgrade"
 							className="w-600 h-450 md:w-450 md:h-300 sm:w-200 sm:h-150"
 						></iframe>
 					</div>
