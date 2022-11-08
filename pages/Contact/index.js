@@ -2,6 +2,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 
 import sendContactData from "../../src/sheets";
+import FOOTER_LINKS from "../../src/Constants/footer_links";
 
 const Contact = () => {
 	const [form, setForm] = useState({
@@ -50,7 +51,7 @@ const Contact = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			{/* Form Section */}
-			<section className="bg-gradient-to-t from-neutral-720 to-neutral-900 p-6 pt-20 lg:pb-20">
+			<section className="bg-gradient-to-t from-neutral-720 to-neutral-900 p-6 lg:pb-20">
 				<div className="container mx-auto flex flex-col lg:flex-row xl:px-24">
 					{/* Contact Form */}
 					<div className="mx-auto w-full max-w-sm text-white lg:flex-grow-0">
@@ -145,32 +146,39 @@ const Contact = () => {
 				</div>
 			</section>
 			{/* Social Media */}
-			<section className="bottom-0 w-full bg-neutral-720 sm:relative lg:absolute ">
+			<section className="bg-neutral-720">
 				<div className="container mx-auto md:pt-8 lg:pt-0">
 					<h3 className="text-center text-lg text-white md:text-[22px]">
 						Connect with us
 					</h3>
 					<div className="flex items-center justify-center space-x-3 pt-2 pb-4 sm:space-x-6 md:mt-2 md:space-x-10">
-						<img
-							className="h-8 w-8 rounded-full md:h-10 md:w-10"
-							src="/assets/icons/facebook-48.png"
-							alt="Facebook"
-						/>
-						<img
-							className="h-8 w-8 rounded-full md:h-10 md:w-10"
-							src="/assets/icons/linkedin-48.png"
-							alt="LinkedIn"
-						/>
-						<img
-							className="h-8 w-8 rounded-full md:h-10 md:w-10"
-							src="/assets/icons/instagram-48.png"
-							alt="Instagram"
-						/>
-						<img
-							className="h-7 w-7 rounded-full md:h-9 md:w-9"
-							src="/assets/icons/google-48.png"
-							alt="Google"
-						/>
+						<a href={FOOTER_LINKS.social.facebook} target="_blank">
+							<img
+								src="/assets/icons/icons8-facebook-48.png"
+								className="h-8 w-8 rounded-full md:h-10 md:w-10"
+							/>
+						</a>
+						<a href={FOOTER_LINKS.social.linkedin} target="_blank">
+							<img
+								src="/assets/icons/icons8-linkedin-circled-48.png"
+								className="h-8 w-8 rounded-full md:h-10 md:w-10"
+							/>
+						</a>
+						<a href={FOOTER_LINKS.social.instagram} target="_blank">
+							<img
+								src="/assets/icons/icons8-instagram-48.png"
+								className="h-8 w-8 rounded-full md:h-10 md:w-10"
+							/>
+						</a>
+						<a
+							href={`mailto:${FOOTER_LINKS.social.email}`}
+							target="_blank"
+						>
+							<img
+								src="/assets/icons/icons8-envelope-48.png"
+								className="h-8 w-8 rounded-full md:h-10 md:w-10"
+							/>
+						</a>
 					</div>
 				</div>
 			</section>
