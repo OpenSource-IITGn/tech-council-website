@@ -346,6 +346,11 @@
     .title {
         font-size: 2.75em;
     }
+    .welcomeText {
+        font-size: 3.5em;
+        width: 65%;
+        
+    }
     .grid_container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
         padding: 10px;
@@ -408,6 +413,11 @@
     .title {
         font-size: 2.5em;
     }
+    .welcomeText {
+        font-size: 3.5em;
+        width: 75%;
+        
+    }
     .subtitle {
         font-size: 1em;
         max-width: 80%;
@@ -448,6 +458,10 @@
     .title {
         font-size: 2.25em;
     }
+    .welcomeText {
+        font-size: 2.75em;
+        width: 90%;
+    }
     .subtitle {
         font-size: 0.9em;
         max-width: 95%;
@@ -481,6 +495,10 @@
 }
   
 @media screen and (max-width: 480px) {
+    .welcomeText {
+        font-size: 2em;
+        width: 95%;
+    }
     .card{
         max-width: 90%;
     }
