@@ -22,6 +22,7 @@ export default function TeamCard({
 							className={styles.clubSocialLink}
 							href={`mailto:${email}`}
 							target="_blank"
+							rel="noreferrer"
 						>
 							<img
 								className={styles.clubSocialIcon}
@@ -32,6 +33,7 @@ export default function TeamCard({
 							className={styles.clubSocialLink}
 							href={website}
 							target="_blank"
+							rel="noreferrer"
 						>
 							<img
 								className={styles.clubSocialIcon}
@@ -54,6 +56,7 @@ export default function TeamCard({
 							className={styles.clubSocialLink}
 							href={website}
 							target="_blank"
+							rel="noreferrer"
 						>
 							<img
 								className={styles.clubSocialIcon}
@@ -64,6 +67,7 @@ export default function TeamCard({
 							className={styles.clubSocialLink}
 							href={website}
 							target="_blank"
+							rel="noreferrer"
 						>
 							<img
 								className={styles.clubSocialIcon}
