@@ -240,9 +240,9 @@ const Home = () => {
 						/>
 						<TeamCard
 							className={styles.teamCardCord2}
-							name="Shruridh Banthia"
+							name="Shruhrid Banthia"
 							email="shruhrid.banthia@iitgn.ac.in"
-							bio="A final year undergraduate student at IIT Gandhinagar."
+							bio="A pre-final year undergraduate student at IIT Gandhinagar."
 							website="https://www.linkedin.com/in/shruhrid-banthia-b9aa01203"
 							image="/assets/images/team/Shruhrid_Banthia.jpg"
 							size="small"
