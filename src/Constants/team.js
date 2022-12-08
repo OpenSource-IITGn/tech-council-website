@@ -202,7 +202,7 @@ const MANAGEMENT = [
 		id: 1,
 		name: "Management Coordinator",
 		members: {
-			name: "Shruridh Banthia",
+			name: "Shruhrid Banthia",
 			email: "shruhrid.banthia@iitgn.ac.in",
 			image: "/assets/images/team/Shruhrid_Banthia.jpg",
 			// image: "/assets/icons/icons8-person-64.png",
