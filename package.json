@@ -5,14 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.10",
     "google-spreadsheet": "^3.3.0",
     "googleapis": "^109.0.1",
-    "http2": "^3.3.7",
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
