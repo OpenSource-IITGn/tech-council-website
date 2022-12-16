@@ -10,7 +10,7 @@ const ABOUT = [
 		id: 1,
 		name: "PLAN",
 		desc: "Consisting of four clubs of various domains, Tinkerers’ Lab and hobby groups that have been working on various genre of projects and activities, Technical Council strives to inculcate the culture of exploring and learning different fields.",
-		banner: "/tech-council/assets/icons/seekPng.png",
+		banner: "/tech-council/assets/icons/SeekPng.png",
 		backgroundColor: "",
 	},
 	{

@@ -1,7 +1,7 @@
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import sheetId from "./Constants/sheetId";
 
-const sendContactData = (row) => {
+const sendContactData = async (row) => {
 	// Config variables
 	const SPREADSHEET_ID = sheetId.SPREADSHEET_ID;
 	const SHEET_ID = sheetId.SHEET_ID;
@@ -23,13 +23,14 @@ const sendContactData = (row) => {
 			await doc.loadInfo();
 
 			const sheet = doc.sheetsById[SHEET_ID];
-			await sheet.addRow(row);
+			return await sheet.addRow(row);
 		} catch (e) {
 			console.error("Error: ", e);
+			window.alert("Some error occured, please try again later.");
 		}
 	};
 
-	appendSpreadsheet(row);
+	return await appendSpreadsheet(row);
 };
 
 export default sendContactData;

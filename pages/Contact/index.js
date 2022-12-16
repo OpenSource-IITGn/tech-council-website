@@ -12,7 +12,7 @@ const Contact = () => {
 		query: "",
 	});
 
-	const submitForm = (e) => {
+	const submitForm = async (e) => {
 		e.preventDefault();
 
 		if (
@@ -29,8 +29,21 @@ const Contact = () => {
 				Query: form.query,
 			};
 
-			sendContactData(newRow);
+			const status = await sendContactData(newRow);
+			if (status) {
+				window.alert("Your query has been sent successfully!");
+				clearForm();
+			}
 		}
+	};
+
+	const clearForm = () => {
+		setForm({
+			name: "",
+			email: "",
+			phone: "",
+			query: "",
+		});
 	};
 
 	const handleChange = (e) => {

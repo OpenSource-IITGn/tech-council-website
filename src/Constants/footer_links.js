@@ -2,16 +2,16 @@ const QUICK = [
 	{
 		id: 1,
 		name: "Clubs&TL",
-		path: "/Clubs",
-		icon: "/assets/icons/icons8-cpu-64.png",
+		path: "/tech-council/Clubs",
+		icon: "assets/icons/icons8-cpu-64.png",
 	},
 	// {id: 2, name: "Upcoming Events", path: "/About", icon:"/assets/icons/icons8-cpu-64.png"},
 	// {id: 3, name: "Recent Events", path: "/About", icon:"/assets/icons/icons8-cpu-64.png"},
 	{
 		id: 4,
 		name: "Team",
-		path: "/About",
-		icon: "/assets/icons/icons8-cpu-64.png",
+		path: "/tech-council/About",
+		icon: "assets/icons/icons8-cpu-64.png",
 	},
 ];
 
