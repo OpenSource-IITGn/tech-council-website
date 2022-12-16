@@ -20,6 +20,7 @@ const nextConfig = {
 		net: false,
 		child_process: false,
 	},
+	basePath: "/tech-council",
 };
 
 module.exports = nextConfig;

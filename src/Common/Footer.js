@@ -1,5 +1,6 @@
 import styles from "../../styles/Common/Footer.module.css";
 import FOOTER_LINKS from "../Constants/footer_links";
+import MEDIA from "../Constants/media";
 
 export default function Footer() {
 	return (
@@ -23,7 +24,7 @@ export default function Footer() {
 							href={link.path}
 						>
 							<img
-								src={link.icon}
+								src={`/tech-council/${link.icon}`}
 								width="15%"
 								height="15%"
 								className={styles.icon_style}
@@ -46,13 +47,13 @@ export default function Footer() {
 				<div className="flex flex-row items-center">
 					<a href={FOOTER_LINKS.social.facebook} target="_blank">
 						<img
-							src="/assets/icons/icons8-facebook-48.png"
+							src={MEDIA.facebook.src}
 							className={styles.social_link}
 						/>
 					</a>
 					<a href={FOOTER_LINKS.social.instagram} target="_blank">
 						<img
-							src="/assets/icons/icons8-instagram-48.png"
+							src={MEDIA.instagram.src}
 							className={styles.social_link}
 						/>
 					</a>
@@ -67,7 +68,7 @@ export default function Footer() {
 				<div className="flex flex-row items-center">
 					<a href={FOOTER_LINKS.social.torque_fb} target="_blank">
 						<img
-							src="/assets/icons/icons8-facebook-48.png"
+							src={MEDIA.facebook.src}
 							className={styles.social_link}
 						/>
 					</a>
@@ -77,7 +78,7 @@ export default function Footer() {
 						target="_blank"
 					>
 						<img
-							src="/assets/icons/icons8-envelope-48.png"
+							src={MEDIA.envelope.src}
 							className={styles.social_link}
 						/>
 					</a>

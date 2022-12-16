@@ -5,6 +5,7 @@ import ABOUT from "../src/Constants/about";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import TeamCard from "../src/Common/TeamCard";
+import TEAM from "../src/Constants/team";
 
 const Home = () => {
 	const size = useWindowSize();
@@ -214,7 +215,7 @@ const Home = () => {
 						email="jaichander.s@iitgn.ac.in"
 						bio="He is a Kanchan and Harilal Doshi Chair Assistant Professor, Mechanical Engineering at IIT Gandhinagar. He completed his PhD from Massachusetts Institute of Technology in 2017."
 						website="https://iitgn.ac.in/faculty/me/7-jaichander"
-						image="/assets/images/team/Jaichander_Swaminathan.jpg"
+						image="/tech-council/assets/images/team/Jaichander_Swaminathan.jpg"
 						size="large"
 					/>
 					<hr className={styles.hrWhite} />
@@ -226,7 +227,7 @@ const Home = () => {
 							email="technical.secretary@iitgn.ac.in"
 							bio="A pre-final year undergraduate student at IIT Gandhinagar."
 							website="http://progyan.me/"
-							image="/assets/images/team/Progyan_Das.jpg"
+							image="/tech-council/assets/images/team/Progyan_Das.jpg"
 							size="small"
 						/>
 						<TeamCard
@@ -235,7 +236,7 @@ const Home = () => {
 							email="aniket.r@iitgn.ac.in"
 							bio="A final year undergraduate student at IIT Gandhinagar."
 							website="http://makra.wtf/"
-							image="/assets/images/team/Aniket_Rajnish.jpg"
+							image="/tech-council/assets/images/team/Aniket_Rajnish.jpg"
 							size="large"
 						/>
 						<TeamCard
@@ -244,7 +245,7 @@ const Home = () => {
 							email="shruhrid.banthia@iitgn.ac.in"
 							bio="A pre-final year undergraduate student at IIT Gandhinagar."
 							website="https://www.linkedin.com/in/shruhrid-banthia-b9aa01203"
-							image="/assets/images/team/Shruhrid_Banthia.jpg"
+							image="/tech-council/assets/images/team/Shruhrid_Banthia.jpg"
 							size="small"
 						/>
 					</div>

@@ -26,7 +26,9 @@ export default function TeamCard({
 						>
 							<img
 								className={styles.clubSocialIcon}
-								src={"/assets/icons/icons8-envelope-48.png"}
+								src={
+									"/tech-council/assets/icons/icons8-envelope-48.png"
+								}
 							/>
 						</a>
 						<a
@@ -37,7 +39,9 @@ export default function TeamCard({
 						>
 							<img
 								className={styles.clubSocialIcon}
-								src={"/assets/icons/icons8-internet-50.png"}
+								src={
+									"/tech-council/assets/icons/icons8-internet-50.png"
+								}
 							/>
 						</a>
 					</div>
@@ -60,7 +64,9 @@ export default function TeamCard({
 						>
 							<img
 								className={styles.clubSocialIcon}
-								src={"/assets/icons/icons8-envelope-48.png"}
+								src={
+									"/tech-council/assets/icons/icons8-envelope-48.png"
+								}
 							/>
 						</a>
 						<a
@@ -71,7 +77,9 @@ export default function TeamCard({
 						>
 							<img
 								className={styles.clubSocialIcon}
-								src={"/assets/icons/icons8-internet-50.png"}
+								src={
+									"/tech-council/assets/icons/icons8-internet-50.png"
+								}
 							/>
 						</a>
 					</div>

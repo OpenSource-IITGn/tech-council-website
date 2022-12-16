@@ -158,7 +158,7 @@ const Contact = () => {
 							rel="noreferrer"
 						>
 							<img
-								src="/assets/icons/icons8-facebook-48.png"
+								src="/tech-council/assets/icons/icons8-facebook-48.png"
 								className="h-8 w-8 rounded-full md:h-10 md:w-10"
 							/>
 						</a>
@@ -168,7 +168,7 @@ const Contact = () => {
 							rel="noreferrer"
 						>
 							<img
-								src="/assets/icons/icons8-linkedin-circled-48.png"
+								src="/tech-council/assets/icons/icons8-linkedin-circled-48.png"
 								className="h-8 w-8 rounded-full md:h-10 md:w-10"
 							/>
 						</a>
@@ -178,7 +178,7 @@ const Contact = () => {
 							rel="noreferrer"
 						>
 							<img
-								src="/assets/icons/icons8-instagram-48.png"
+								src="/tech-council/assets/icons/icons8-instagram-48.png"
 								className="h-8 w-8 rounded-full md:h-10 md:w-10"
 							/>
 						</a>
@@ -188,7 +188,7 @@ const Contact = () => {
 							rel="noreferrer"
 						>
 							<img
-								src="/assets/icons/icons8-envelope-48.png"
+								src="/tech-council/assets/icons/icons8-envelope-48.png"
 								className="h-8 w-8 rounded-full md:h-10 md:w-10"
 							/>
 						</a>
