@@ -6,7 +6,63 @@
     width: 100%;
     height: 100%;
     background-color: var(--primarySolid);
-    padding: 40px 10px;
+    /* padding: 0px 0px; */
+    color: var(--red)
+}
+
+.ignite_home {
+    background-image: url("/assets/ignite/ignite-bg.png");
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ignite_logo_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.ignite_logo {
+    width: 250px;
+    height: 250px;
+}
+
+.ignite_text {
+    /* font-family: ; */
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ignite_desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ignite_iitgn_text {
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ignite_hr {
+    height: 5px;
+    background-color: var(--white);
+    width: 80%;
+}
+
+.ignite_dates {
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
 }
 
 .mainpage {
@@ -14,6 +70,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px 0;
+    background-color: var(--black);
 }
 
 .title {
@@ -41,10 +98,6 @@
     text-align: center;
     line-height: 1.5em;
     margin: 20px auto;
-}
-
-.ignitevents {
-    background-color: var(--black);
 }
 
 .clubsOuter {
@@ -99,18 +152,25 @@
     font-size: 1em;
 }
 
-.clubSocial {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 20px;
+.venue_outer {
+    margin: 10px;
 }
 
-.clubSocialLink {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+.venue_info_div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.venue_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.venue_text {
+    color: var(--white);
+    font-size: 1.25em;
+    margin: 0px 0px 0px 10px
 }
 
 @media screen and (max-width: 992px) {

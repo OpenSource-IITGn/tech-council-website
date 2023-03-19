@@ -23,74 +23,134 @@ const Clubs = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.root}>
+				<div style={{ height: height }} className={styles.ignite_home}>
+					<div className={styles.ignite_logo_div}>
+						<img
+							className={styles.ignite_logo}
+							src="/assets/ignite/ignite-logo.jpg"
+						/>
+						<h2 className={styles.ignite_text}>IGNITE 8.0</h2>
+					</div>
+					<div className={styles.ignite_desc}>
+						<h2 className={styles.ignite_iitgn_text}>
+							IIT GANDHINAGAR
+						</h2>
+						<hr className={styles.ignite_hr} />
+						<h2 className={styles.ignite_dates}>
+							13 MARCH - 4 APRIL
+						</h2>
+					</div>
+				</div>
 				<div style={{ height: height }} className={styles.mainpage}>
-					<h2 className={styles.title}>IGNITE 9.0</h2>
-					<h3 className={styles.subtitle}>
-						Indian Institute of Technology Gandhinagar
-					</h3>
+					{/* <h2 className={styles.title}>IGNITE 8.0</h2> */}
+					<h3 className={styles.subtitle}>About IGNITE 8.0</h3>
 					<p className={styles.desc}>
-						Ignite aims to provide the students with a world class
-						technical experience, to inspire and inculcate critical
-						thinking among them by enhancing their problem solving
-						skills, and promote indigenous self-made technology. The
-						motivation behind Ignite is to provide the members of
-						IIT Gandhinagar an exposure to cutting-edge technology
-						and inspirit the participants with the will and wish to
-						replicate and reinvent radical innovation in the college
-						itself, at the maximum possible levels. Ignite creates a
-						platform for the members to uplift their technical
-						quotients by promoting more hands-on skills and
-						encourages indigenous self-made technology.
+						Ignite 8.0 is a Science and Technology Fair that aims to
+						support and encourage critical thinking,
+						problem-solving, and curiosity among school students
+						from the disciplines of Science, Technology,
+						Engineering, Arts, and Mathematics. The event will be a
+						platform to introduce a new generation of engineers,
+						scientists, and researchers to the diverse dimensions of
+						science and technology. IIT Gandhinagar aspires to
+						showcase its in-house technological prowess,
+						state-of-the-art infrastructure and research facilities,
+						exceptionally talented students, and creative learning
+						programs. With a plethora of interactive showcases and
+						exhibitions, hands-on training modules, and engaging
+						competitions, Ignite is a celebration of technology,
+						inspiration, discovery, and innovation.
 					</p>
 				</div>
-				<div className={styles.ignitevents}>
+				<div>
 					<h2 className={styles.title}>Events</h2>
 					<div className={styles.clubsOuter}>
-						{IGNITE_EVENTS.map((club) => {
+						{IGNITE_EVENTS.map((event) => {
 							return (
 								<div
 									className={styles.clubCard}
-									key={club.id}
+									key={event.id}
 									style={{
-										backgroundColor: club.backgroundColor,
+										backgroundColor: event.backgroundColor,
 									}}
 								>
 									<div className={styles.bannerOuter}>
 										<img
 											className={styles.clubBanner}
-											src={club.banner}
+											src={event.banner}
 										/>
 									</div>
 									<div className={styles.clubInfo}>
 										<h2 className={styles.clubName}>
-											{club.name}
+											{event.name}
 										</h2>
 										<p className={styles.clubDesc}>
-											{club.desc}
+											{event.desc}
 										</p>
-										<div className={styles.clubSocial}>
-											{club.social &&
-												club.social.length > 0 &&
-												club.social.map((social) => {
-													return (
-														<a
-															className={
-																styles.clubSocialLink
-															}
-															href={social.src}
-															key={social.id}
-														>
-															<img
-																className={
-																	styles.clubSocialIcon
-																}
-																src={
-																	social.icon
-																}
-															/>
-														</a>
-													);
-												})}
+										<div className={styles.venue_outer}>
+											<div
+												className={
+													styles.venue_info_div
+												}
+											>
+												<img
+													className={
+														styles.venue_icon
+													}
+													src={
+														"assets/ignite/icons8-calendar-100.png"
+													}
+												/>
+												<h2
+													className={
+														styles.venue_text
+													}
+												>
+													{event.date}
+												</h2>
+											</div>
+											<div
+												className={
+													styles.venue_info_div
+												}
+											>
+												<img
+													className={
+														styles.venue_icon
+													}
+													src={
+														"assets/ignite/icons8-place-marker-100.png"
+													}
+												/>
+												<h2
+													className={
+														styles.venue_text
+													}
+												>
+													{event.venue}
+												</h2>
+											</div>
+											<div
+												className={
+													styles.venue_info_div
+												}
+											>
+												<img
+													className={
+														styles.venue_icon
+													}
+													src={
+														"assets/ignite/icons8-clock-100.png"
+													}
+												/>
+												<h2
+													className={
+														styles.venue_text
+													}
+												>
+													{event.time}
+												</h2>
+											</div>
 										</div>
 									</div>
 								</div>
